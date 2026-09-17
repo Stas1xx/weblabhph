@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body style="font-family: sans-serif; margin: 20px;">
+    <form action="process.php" method="POST" enctype="multipart/form-data">
+        Оберіть зображення (png, jpg, jpeg до 2 МБ):<br><br>
+        <input type="file" name="uploaded_file" required><br><br>
+        <input type="submit" value="Завантажити">
+    </form>
+
+    <hr>
+
+    <h2>Запис тексту у файл</h2>
+    <form action="text.php" method="POST">
+        Введіть текст:<br><br>
+        <textarea name="log_text" rows="4" cols="30" required></textarea><br><br>
+        <input type="submit" value="Зберегти">
+    </form>
+    
+    <hr>
+    <a href="list.php">Переглянути всі файли на сервері</a>
+</body>
+</html>
